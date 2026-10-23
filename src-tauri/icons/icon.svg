@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="cloud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBAD41"/>
+      <stop offset="1" stop-color="#F38020"/>
+    </linearGradient>
+    <clipPath id="cloud-shape">
+      <circle cx="320" cy="620" r="150"/>
+      <circle cx="570" cy="480" r="230"/>
+      <circle cx="790" cy="620" r="150"/>
+      <rect x="140" y="600" width="800" height="170" rx="85"/>
+    </clipPath>
+  </defs>
+  <!-- Scaled up so the cloud fills the icon -->
+  <g transform="translate(512 512) scale(1.12) translate(-540 -510)">
+    <!-- Cloud -->
+    <rect width="1024" height="1024" fill="url(#cloud)" clip-path="url(#cloud-shape)"/>
+    <!-- Tunnel portal -->
+    <path d="M384 770 V700 A128 128 0 0 1 640 700 V770 Z" fill="#8A4210"/>
+    <path d="M352 770 V700 A160 160 0 0 1 672 700 V770" fill="none" stroke="#FFFFFF" stroke-width="64"/>
+  </g>
+</svg>

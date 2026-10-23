@@ -5,17 +5,15 @@ import path from 'path';
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [react()],
-    root: path.join(__dirname, 'src/renderer'),
+    root: path.join(__dirname, 'src'),
     resolve: {
         alias: {
-            '@renderer': path.resolve(__dirname, 'src/renderer'),
-            '@common': path.resolve(__dirname, 'src/common'),
-            '@': path.resolve(__dirname, 'src/renderer'), // Keep @ for backward compatibility
+            '@': path.resolve(__dirname, 'src'),
         },
     },
     base: './',
     build: {
-        outDir: '../../dist/renderer',
+        outDir: '../dist',
         emptyOutDir: true,
     },
     server: {
