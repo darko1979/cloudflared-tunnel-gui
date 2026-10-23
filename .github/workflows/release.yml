@@ -64,7 +64,7 @@ jobs:
           releaseBody: |
             Download the installer for your system from the assets below.
 
-            - **Windows:** `.exe` (setup) or `.msi`
+            - **Windows:** `.exe` (setup), `.msi`, or `_portable.zip` (no install, just unzip and run)
             - **macOS:** `.dmg` (`aarch64` for Apple Silicon, `x64` for Intel)
             - **Linux:** `.deb`, `.rpm` or `.AppImage`
 
@@ -73,3 +73,15 @@ jobs:
           releaseDraft: true
           prerelease: false
           args: ${{ matrix.args }}
+
+      # The release exe embeds the UI, so it runs without installing (needs WebView2, built into Windows 10/11)
+      - name: Upload portable Windows build
+        if: matrix.platform == 'windows-latest'
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          $version = '${{ github.ref_name }}'.TrimStart('v')
+          $zip = "Cloudflared.Tunnel.GUI_${version}_x64_portable.zip"
+          Compress-Archive -Path src-tauri/target/release/cloudflared-tunnel-gui.exe -DestinationPath $zip
+          gh release upload '${{ github.ref_name }}' $zip --clobber
