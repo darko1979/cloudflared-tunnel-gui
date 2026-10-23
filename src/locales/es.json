@@ -129,7 +129,9 @@
         "loginSuccess": "Sesión iniciada correctamente",
         "loginFailed": "Error al iniciar sesión",
         "logoutSuccess": "Autorización eliminada",
-        "logoutFailed": "No se pudo quitar la autorización"
+        "logoutFailed": "No se pudo quitar la autorización",
+        "about": "Acerca de",
+        "version": "Versión"
     },
     "status": {
         "active": "Activo",

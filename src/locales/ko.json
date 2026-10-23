@@ -129,7 +129,9 @@
         "loginSuccess": "로그인했습니다",
         "loginFailed": "로그인하지 못했습니다",
         "logoutSuccess": "인증을 제거했습니다",
-        "logoutFailed": "인증을 제거하지 못했습니다"
+        "logoutFailed": "인증을 제거하지 못했습니다",
+        "about": "정보",
+        "version": "버전"
     },
     "status": {
         "active": "활성",

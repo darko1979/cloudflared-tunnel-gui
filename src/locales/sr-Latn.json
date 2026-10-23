@@ -129,7 +129,9 @@
         "loginSuccess": "Prijava je uspela",
         "loginFailed": "Prijava nije uspela",
         "logoutSuccess": "Autorizacija je uklonjena",
-        "logoutFailed": "Uklanjanje autorizacije nije uspelo"
+        "logoutFailed": "Uklanjanje autorizacije nije uspelo",
+        "about": "O aplikaciji",
+        "version": "Verzija"
     },
     "status": {
         "active": "Aktivan",

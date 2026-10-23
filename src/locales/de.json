@@ -129,7 +129,9 @@
         "loginSuccess": "Anmeldung erfolgreich",
         "loginFailed": "Anmeldung fehlgeschlagen",
         "logoutSuccess": "Autorisierung entfernt",
-        "logoutFailed": "Autorisierung konnte nicht entfernt werden"
+        "logoutFailed": "Autorisierung konnte nicht entfernt werden",
+        "about": "Über",
+        "version": "Version"
     },
     "status": {
         "active": "Aktiv",

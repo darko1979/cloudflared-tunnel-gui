@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { getVersion } from '@tauri-apps/api/app';
 import { LogIn, LogOut, Check, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -16,8 +17,13 @@ export default function Settings() {
     const { theme, setTheme } = useTheme();
     const [isLoggingIn, setIsLoggingIn] = useState(false);
     const [isLoggingOut, setIsLoggingOut] = useState(false);
+    const [version, setVersion] = useState('');
 
     const { isAuthenticated, setAuthenticated } = useAppStore();
+
+    useEffect(() => {
+        getVersion().then(setVersion).catch(() => setVersion(''));
+    }, []);
 
     useEffect(() => {
         const checkAuth = async () => {
@@ -161,6 +167,19 @@ export default function Settings() {
                                 {t('settings.logout')}
                             </Button>
                         )}
+                    </div>
+                </CardContent>
+            </Card>
+
+            {/* About */}
+            <Card>
+                <CardHeader>
+                    <CardTitle className="text-lg">{t('settings.about')}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <div className="flex items-center gap-4">
+                        <Label className="min-w-[100px]">{t('settings.version')}</Label>
+                        <span className="text-sm text-muted-foreground">{version || '-'}</span>
                     </div>
                 </CardContent>
             </Card>

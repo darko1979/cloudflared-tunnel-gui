@@ -129,7 +129,9 @@
         "loginSuccess": "Вход выполнен",
         "loginFailed": "Не удалось войти",
         "logoutSuccess": "Авторизация удалена",
-        "logoutFailed": "Не удалось удалить авторизацию"
+        "logoutFailed": "Не удалось удалить авторизацию",
+        "about": "О программе",
+        "version": "Версия"
     },
     "status": {
         "active": "Активен",

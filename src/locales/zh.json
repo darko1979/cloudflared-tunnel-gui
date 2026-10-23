@@ -129,7 +129,9 @@
         "loginSuccess": "登录成功",
         "loginFailed": "登录失败",
         "logoutSuccess": "授权已移除",
-        "logoutFailed": "移除授权失败"
+        "logoutFailed": "移除授权失败",
+        "about": "关于",
+        "version": "版本"
     },
     "status": {
         "active": "正常",

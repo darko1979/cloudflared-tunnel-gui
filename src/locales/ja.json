@@ -129,7 +129,9 @@
         "loginSuccess": "ログインしました",
         "loginFailed": "ログインに失敗しました",
         "logoutSuccess": "認証を解除しました",
-        "logoutFailed": "認証の解除に失敗しました"
+        "logoutFailed": "認証の解除に失敗しました",
+        "about": "このアプリについて",
+        "version": "バージョン"
     },
     "status": {
         "active": "稼働中",

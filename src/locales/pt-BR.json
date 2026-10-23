@@ -129,7 +129,9 @@
         "loginSuccess": "Login realizado com sucesso",
         "loginFailed": "Falha no login",
         "logoutSuccess": "Autorização removida",
-        "logoutFailed": "Falha ao remover a autorização"
+        "logoutFailed": "Falha ao remover a autorização",
+        "about": "Sobre",
+        "version": "Versão"
     },
     "status": {
         "active": "Ativo",

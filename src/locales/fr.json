@@ -129,7 +129,9 @@
         "loginSuccess": "Connexion réussie",
         "loginFailed": "Échec de la connexion",
         "logoutSuccess": "Autorisation retirée",
-        "logoutFailed": "Impossible de retirer l'autorisation"
+        "logoutFailed": "Impossible de retirer l'autorisation",
+        "about": "À propos",
+        "version": "Version"
     },
     "status": {
         "active": "Actif",

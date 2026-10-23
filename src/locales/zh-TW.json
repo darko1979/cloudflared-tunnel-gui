@@ -129,7 +129,9 @@
         "loginSuccess": "登入成功",
         "loginFailed": "登入失敗",
         "logoutSuccess": "已移除授權",
-        "logoutFailed": "無法移除授權"
+        "logoutFailed": "無法移除授權",
+        "about": "關於",
+        "version": "版本"
     },
     "status": {
         "active": "運作中",

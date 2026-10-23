@@ -1,6 +1,6 @@
 [package]
 name = "cloudflared-tunnel-gui"
-version = "0.1.0"
+version = "1.0.0"
 description = "A GUI application for managing Cloudflare Tunnels"
 authors = ["hidumou"]
 edition = "2021"
